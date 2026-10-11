@@ -33,7 +33,8 @@ namespace Tarea1.Controllers
                     CreationDate = t.CreationDate.ToString("dd/MM/yyyy HH:mm:ss"),
                     t.Deparment,
                     t.Priority,
-                    t.Status
+                    t.Status,
+                    t.UserName
                 })
             }, JsonRequestBehavior.AllowGet);
         }
