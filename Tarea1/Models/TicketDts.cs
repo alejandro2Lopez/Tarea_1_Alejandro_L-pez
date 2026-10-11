@@ -40,13 +40,10 @@ namespace Tarea1.Models
         
         }
 
-        public List<Ticket> pendingTickets() {
-            return tickets.Where(ticket => ticket.Status == "pendiente").ToList();
+        public List<Ticket> filterTickets(bool isPending) {
+            return tickets.Where(ticket => ticket.Status == (isPending?"pendiente" : "resuelto")).ToList();
         }
-        public List<Ticket> resolveTickets()
-        {
-            return tickets.Where(ticket => ticket.Status == "resuelto").ToList();
-        }
+       
 
     }
 }
