@@ -33,7 +33,7 @@ namespace Tarea1.Models.Entities
 
         public string Tittle { get => tittle; set => tittle = value; }
         public string Description { get => description; set => description = value; }
-        public DateTime CreationDate { get => creationDate; set => creationDate = value; }
+        public DateTime CreationDate { get => DateTime.Now; set => creationDate = value; }
         public string Deparment { get => deparment; set => deparment = value; }
         public string Priority { get => priority; set => priority = value; }
         public string Status { get => status; set => status = value; }
