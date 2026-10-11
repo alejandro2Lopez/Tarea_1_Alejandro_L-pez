@@ -82,7 +82,7 @@ namespace Tarea1.Controllers
             return Json(new
             {
                 status = 200,
-                TicketResolveNum = Numtickets
+                TicketPendingNum = Numtickets
             }, JsonRequestBehavior.AllowGet);
         }
     }
