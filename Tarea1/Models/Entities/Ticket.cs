@@ -7,7 +7,7 @@ namespace Tarea1.Models.Entities
 {
     public class Ticket
     {
-       private string tittle;
+        private string tittle;
         private string description;
         private DateTime creationDate;
 
