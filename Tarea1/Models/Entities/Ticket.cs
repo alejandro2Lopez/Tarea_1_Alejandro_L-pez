@@ -15,6 +15,8 @@ namespace Tarea1.Models.Entities
 
         string priority;
 
+        string status;
+
         public Ticket(string tittle, string description, DateTime creationDate, string deparment, string priority)
         {
             this.Tittle = tittle;
