@@ -41,7 +41,7 @@ namespace Tarea1.Models
         }
 
         public List<Ticket> filterTickets(bool isPending) {
-            return tickets.Where(ticket => ticket.Status == (isPending?"pendiente" : "resuelto")).ToList();
+            return tickets.Where(ticket => ticket.Status == (isPending?"En proceso" : "Cerrado")).ToList();
         }
        
 
