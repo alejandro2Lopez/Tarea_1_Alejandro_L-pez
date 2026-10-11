@@ -25,6 +25,10 @@ namespace Tarea1.Models.Entities
             this.Deparment = deparment;
             this.Priority = priority;
         }
+        public Ticket()
+        {
+          
+        }
 
         public string Tittle { get => tittle; set => tittle = value; }
         public string Description { get => description; set => description = value; }
