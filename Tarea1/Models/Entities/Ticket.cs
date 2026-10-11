@@ -7,15 +7,15 @@ namespace Tarea1.Models.Entities
 {
     public class Ticket
     {
-        string tittle;
-        string description;
-        DateTime creationDate;
+       private string tittle;
+        private string description;
+        private DateTime creationDate;
 
-        string deparment;
+        private string deparment;
 
-        string priority;
+        private string priority;
 
-        string status;
+        private string status;
 
         public Ticket(string tittle, string description, DateTime creationDate, string deparment, string priority)
         {
@@ -31,5 +31,6 @@ namespace Tarea1.Models.Entities
         public DateTime CreationDate { get => creationDate; set => creationDate = value; }
         public string Deparment { get => deparment; set => deparment = value; }
         public string Priority { get => priority; set => priority = value; }
+        public string Status { get => status; set => status = value; }
     }
 }
