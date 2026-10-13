@@ -6,19 +6,7 @@
     $("#pTotalTicket").text(0);
 });
 
-function getTicketList() {
-    $.ajax({
-        url: '/Ticket/GetTicketList',
-        type: 'GET',
-        dataType: 'json',
-        success: function (respuesta) {
-            console.log(respuesta);
-        },
-        error: function (xhr) {
-            console.error("Error al obtener tickets:", xhr);
-        }
-    });
-}
+
 
 function getPendingTickets() {
     return $.ajax({
